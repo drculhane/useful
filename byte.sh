@@ -9,11 +9,12 @@ sudo dnf install which diffutils
 sudo dnf install llvm-devel clang clang-devel
 # get the chapel source
 echo "Getting chapel"
+cd ~
 curl -LO https://github.com/chapel-lang/chapel/releases/download/2.6.0/chapel-2.6.0.tar.gz
 tar xvf chapel-2.6.0.tar.gz
 # make chapel
 echo "Making chapel, etc."
-cd $CHPL_HOME
+cd ~/chapel-2.0.6
 make
 # do the rest
 make frontend-shared
