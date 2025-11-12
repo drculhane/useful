@@ -166,7 +166,9 @@ singe() {
 dual() {
     cp $HOME/registration-config-dual-dim.json $REGISTER_FILE
 }
-
+tetra() {
+    cp $HOME/registration-config-quad-dim.json $REGISTER_FILE
+}
 # Miniconda initialization.
 
 # >>> conda initialize >>>
