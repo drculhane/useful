@@ -31,8 +31,4 @@ echo "Installing miniconda"
 # install miniconda
 cd
 sh miniconda.sh
-# now create the virtual environment
-echo "Creating environment"
-cd ~/projects/arkouda
-conda env create --file=arkouda-env-dev.yml
 echo "Time to close this shell and make a new one."
