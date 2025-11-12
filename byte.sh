@@ -1,6 +1,3 @@
-echo "Installing dependencies"
-cd projects/arkouda
-pip install -e . --no-deps
 # install chapel prerequisites.  This will vary per Linux distro.  These are for Alma.
 echo "Getting chapel prerequisites."
 sudo dnf upgrade
