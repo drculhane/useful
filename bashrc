@@ -200,16 +200,16 @@ alias tink="cd $HOME/tinkering"
 
 alias p2="python2.7"  # I always install python2; your mileage may vary
 alias p3="python3"
-alias charm="/snap/bin/pycharm-community"
+#alias charm="/snap/bin/pycharm-community"
 #alias jup="/snap/bin/jupyterlab-desktop"
-alias jup="jupyter-notebook"
-alias viz="/snap/bin/code"
+#alias jup="jupyter-notebook"
+#alias viz="/snap/bin/code"
 
 # and special cases
 
-alias neaten="$HOME/neaten.sh"
-alias nt="$HOME/neaten.sh"
-alias tm="terminator -l Multipane &"
+#alias neaten="$HOME/neaten.sh"
+#alias nt="$HOME/neaten.sh"
+#alias tm="terminator -l Multipane &"
 alias pyhunt="sh ~/misc/pyhunt.sh"
 alias chhunt="sh ~/misc/chhunt.sh"
 
