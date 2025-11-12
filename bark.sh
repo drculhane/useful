@@ -1,12 +1,9 @@
+
 cd ~
 echo "Making directories"
 mkdir tinkering
 mkdir projects
 mkdir misc
-# get the chapel source
-echo "Getting chapel"
-curl -LO https://github.com/chapel-lang/chapel/releases/download/2.6.0/chapel-2.6.0.tar.gz
-tar xvf chapel-2.6.0.tar.gz
 # create the arkouda directory and clone the main
 cd projects
 echo "Getting arkouda"
@@ -23,13 +20,14 @@ echo "Getting useful tools."
 cd ~
 git clone https://github.com/drculhane/useful.git
 cd useful
+read -n 1 -s -r -p "Press any key to continue..."
 mv Makefile.paths ~/projects/arkouda/Makefile.paths
 mv bashrc ~/.bashrc
 mv chhunt.sh ~/misc
 mv pyhunt.sh ~/misc
 mv vimrc ~/.vimrc
 mv -r vimstuff ~/.vim
-echo "installing miniconda"
+echo "Installing miniconda"
 # install miniconda
 cd
 sh miniconda.sh
@@ -37,6 +35,4 @@ sh miniconda.sh
 echo "Creating environment"
 cd ~/projects/arkouda
 conda env create --file=arkouda-env-dev.yml
-conda activate arkouda-dev
-pip install -e . --no-deps
 echo "Time to close this shell and make a new one."
