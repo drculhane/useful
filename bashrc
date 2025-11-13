@@ -214,6 +214,7 @@ alias p3="python3"
 #alias tm="terminator -l Multipane &"
 alias pyhunt="sh ~/misc/pyhunt.sh"
 alias chhunt="sh ~/misc/chhunt.sh"
+alias vi="vim"
 
 # git stuff
 
