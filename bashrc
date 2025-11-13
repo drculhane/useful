@@ -113,6 +113,7 @@ export CHPL_TARGET_CPU=native
 export CHPL_COMM=none
 export CHPL_HOST_MEM=jemalloc
 export CHPL_RE2=bundled
+export CHPL_MAKE="make -j8"
 
 #  My editor of choice
 
