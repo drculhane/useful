@@ -20,6 +20,11 @@ echo "Getting chapel prerequisites."
 sudo apt-get update
 sudo apt-get install gcc g++ m4 perl python3 python3-dev bash make mawk git pkg-config cmake
 sudo apt-get install llvm-dev llvm clang libclang-dev libclang-cpp-dev libedit-dev
+# These are for Almalinux.
+# sudo dnf upgrade
+# sudo dnf install gcc gcc-c++ m4 perl python3 python3-devel bash make gawk git cmake
+# sudo dnf install which diffutils
+# sudo dnf install llvm-devel clang clang-devel
 # get the chapel source
 echo "Getting chapel"
 cd ~
