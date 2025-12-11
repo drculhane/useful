@@ -114,6 +114,8 @@ export CHPL_COMM=none
 export CHPL_HOST_MEM=jemalloc
 export CHPL_RE2=bundled
 export CHPL_MAKE="make -j8"
+export CHPL_TARGET_COMPILER=gnu
+export CHPL_HOST_COMPILER=gnu
 
 #  My editor of choice
 
