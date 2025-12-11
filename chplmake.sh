@@ -1,7 +1,7 @@
 
 # make chapel
 echo "Making chapel, etc."
-cd ~/chapel-2.0.6
+cd ~/chapel-2.6.0
 make
 # do the rest
 make frontend-shared
