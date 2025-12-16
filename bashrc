@@ -107,15 +107,17 @@ export ARKOUDA_QUICK_COMPILE=true
 export ARKOUDA_SKIP_CHECK_DEPS=True
 source $CHPL_HOME/util/setchplenv.bash
 
-export CHPL_LLVM=system
-export CHPL_GMP=bundled
-export CHPL_TARGET_CPU=native
-export CHPL_COMM=none
-export CHPL_HOST_MEM=jemalloc
-export CHPL_RE2=bundled
-export CHPL_MAKE="make -j8"
-export CHPL_TARGET_COMPILER=gnu
-export CHPL_HOST_COMPILER=gnu
+# export CHPL_LLVM=system
+# export CHPL_GMP=bundled
+# export CHPL_TARGET_CPU=native
+# export CHPL_COMM=none
+# export CHPL_HOST_MEM=jemalloc
+# export CHPL_RE2=bundled
+# export CHPL_MAKE="make -j8"
+# export CHPL_TARGET_COMPILER=gnu
+# export CHPL_HOST_COMPILER=gnu
+
+sh ~/.chapel_env.sh
 
 #  My editor of choice
 
