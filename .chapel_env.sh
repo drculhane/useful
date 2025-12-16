@@ -66,14 +66,14 @@ case "$DISTRO_ID" in
     ubuntu|linuxmint)
         # Ubuntu / Mint are LLVM-friendly
         export CHPL_TARGET_LD=lld
-        export CHPL_MEM=jemalloc
+        export CHPL_TARGET_MEM=jemalloc
         export GASNET_CFLAGS="-fPIC"
         ;;
 
     fedora)
         # Fedora defaults are stricter
         export CHPL_TARGET_LD=lld
-        export CHPL_MEM=jemalloc
+        export CHPL_TARGET_MEM=jemalloc
         export GASNET_CFLAGS="-fPIC"
         export GASNET_LDFLAGS="-latomic"
         ;;
@@ -81,10 +81,10 @@ case "$DISTRO_ID" in
     almalinux|rhel|rocky)
         # RHEL-family quirks
         export CHPL_TARGET_LD=lld
-        export CHPL_MEM=jemalloc
+        export CHPL_TARGET_MEM=jemalloc
         export GASNET_CFLAGS="-fPIC"
         export GASNET_LDFLAGS="-latomic"
-        export CHPL_ATOMICS=llvm
+        export CHPL_ATOMICS=cstdlib
         ;;
 
     *)
