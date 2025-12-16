@@ -117,7 +117,7 @@ source $CHPL_HOME/util/setchplenv.bash
 # export CHPL_TARGET_COMPILER=gnu
 # export CHPL_HOST_COMPILER=gnu
 
-sh ~/.chapel_env.sh
+source ~/.chapel_env.sh
 
 #  My editor of choice
 
