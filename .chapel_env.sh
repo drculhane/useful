@@ -46,7 +46,7 @@ unset CC CXX CFLAGS CXXFLAGS CPPFLAGS LDFLAGS
 export CHPL_TARGET_COMPILER=clang
 export CHPL_RT_COMPILER=clang
 export CHPL_TASKS=qthreads
-export CHPL_COMM=gasnet
+export CHPL_COMM=none
 
 # Prefer system LLVM
 export CHPL_LLVM=system
