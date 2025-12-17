@@ -17,10 +17,10 @@ export CHAPEL_ENV_LOADED=1
 if [[ -f /etc/os-release ]]; then
     . /etc/os-release
     DISTRO_ID="${ID,,}"
-    DISTRO_LIKE="${ID_LIKE,,}"
+#   DISTRO_LIKE="${ID_LIKE,,}"
 else
     DISTRO_ID="unknown"
-    DISTRO_LIKE=""
+#   DISTRO_LIKE=""
 fi
 
 #############################################
