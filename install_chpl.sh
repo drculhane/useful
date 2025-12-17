@@ -17,7 +17,7 @@ CHAPEL_URL="https://github.com/chapel-lang/chapel/releases/download/${CHAPEL_VER
 if [[ -f /etc/os-release ]]; then
     . /etc/os-release
     DISTRO_ID="${ID,,}"
-    DISTRO_LIKE="${ID_LIKE,,}"
+#   DISTRO_LIKE="${ID_LIKE,,}"
 else
     echo "Cannot detect Linux distribution"
     exit 1
